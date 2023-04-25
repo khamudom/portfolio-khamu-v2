@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navLinks {
+    ul {
+      display: flex;
+
+      .link {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .chevron {
+          opacity: 0;
+          transition: opacity 300ms ease-in;
+        }
+
+        &.link:hover {
+          .chevron {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .accounts {
+    display: flex;
+    column-gap: 8px;
+
+    .hamburger {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .accounts {
+      .hamburger {
+        display: block;
+      }
+    }
+  }
+}
