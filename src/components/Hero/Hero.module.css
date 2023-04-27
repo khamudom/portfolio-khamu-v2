@@ -1,0 +1,43 @@
+.container .title {
+  font-size: 4rem;
+  line-height: 0.8;
+  font-weight: 400;
+  animation: fadeUpLoad var(--load-duration) var(--easing) 0.4s 1 forwards;
+}
+.container .subTitle {
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 400;
+  margin-top: 1em;
+  animation: fadeUpLoad var(--load-duration) var(--easing) 0.5s 1 forwards;
+}
+.container .description {
+  font-size: 1.2rem;
+  margin-top: 12px;
+  animation: fadeUpLoad var(--load-duration) var(--easing) 0.6s 1 forwards;
+}
+.container .btnContainer {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  margin-top: 20px;
+}
+.container .btn {
+  display: inline-block;
+  padding: 0.5em 1em;
+  border: 1px solid var(--dark-one);
+  background-color: var(--light-one);
+  color: var(--dark-one);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+.container .btn .btnContent {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 4px;
+       column-gap: 4px;
+}
+.container .btn:hover, .container .btn:focus {
+  background-color: var(--dark-one);
+  color: var(--light-one);
+}/*# sourceMappingURL=Hero.module.css.map */

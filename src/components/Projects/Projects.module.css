@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.container .sectionHeader {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 8em;
+  position: relative;
+}
+.container .sectionHeader .title {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  font-size: clamp(1.625rem, 5vw, 2rem);
+}
+.container .sectionHeader .divider {
+  opacity: 1;
+  width: 100%;
+  -webkit-margin-start: 1em;
+          margin-inline-start: 1em;
+}
+.container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 0.75em;
+       column-gap: 0.75em;
+}/*# sourceMappingURL=Projects.module.css.map */

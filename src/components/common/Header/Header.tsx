@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import React, { useState } from 'react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
@@ -17,15 +18,30 @@ const navigationItems = [
     title: 'Projects',
     href: '/projects',
   },
+  // {
+  //   id: 2,
+  //   title: 'Contact',
+  //   href: '/contact',
+  // },
+  // {
+  //   id: 3,
+  //   title: 'About',
+  //   href: '/about',
+  // },
+];
+
+const accountLinks = [
   {
-    id: 2,
-    title: 'Contact',
-    href: '/contact',
+    id: 0,
+    title: 'Github',
+    href: 'https://github.com/khamudom',
+    icon: <AiOutlineGithub />,
   },
   {
-    id: 3,
-    title: 'About',
-    href: '/about',
+    id: 1,
+    title: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/khamudom/',
+    icon: <AiOutlineLinkedin />,
   },
 ];
 
@@ -33,8 +49,16 @@ const Header = () => {
   return (
     <header>
       <div className={styles.container}>
-        <div className={styles.logo}>
-          <span>LOGO</span>
+        <div className={styles.logoWrapper}>
+          <img
+            className={styles.logo}
+            src="/assets/images/kulogo.png"
+            alt="logo"
+          />
+          <div>
+            Kham <br />
+            Udom
+          </div>
         </div>
         <div className={styles.navLinks}>
           <ul>
@@ -48,8 +72,16 @@ const Header = () => {
           </ul>
         </div>
         <div className={styles.accounts}>
-          <AiOutlineGithub />
-          <AiOutlineLinkedin />
+          {accountLinks.map((item) => (
+            <Link
+              className={styles.icon}
+              href={item.href}
+              key={item.id}
+              target="_blank"
+            >
+              {item.icon}
+            </Link>
+          ))}
           <FiMail />
           <RxHamburgerMenu className={styles.hamburger} />
         </div>
