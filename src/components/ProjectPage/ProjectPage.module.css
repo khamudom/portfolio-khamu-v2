@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1440px;
+  height: 100%;
+  padding: 60px 40px 40px;
+  margin: auto;
+}
+
+.headerSection {
+  max-width: 1024px;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.btnWrapper {
+  display: flex;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+}
+
+.technology {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.technology h3 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+}
+.contentSection .dash,
+.contentSection .dash17,
+.contentSection .dashApp {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+  text-align: center;
+}
+.contentSection .dash p,
+.contentSection .dash17 p,
+.contentSection .dashApp p {
+  margin-bottom: 20px;
+}
+.contentSection .dash .images,
+.contentSection .dash17 .images,
+.contentSection .dashApp .images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.contentSection .dash .images img,
+.contentSection .dash17 .images img,
+.contentSection .dashApp .images img {
+  border-radius: 2px;
+  height: 300px;
+}
+.contentSection .dash17 span {
+  display: inline-flex;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.contentSection .dash17 a {
+  text-decoration: underline;
+}
+.contentSection .dash17 .video iframe {
+  height: 500px;
+  width: 889px;
+}
+.contentSection .dashApp .images img {
+  height: 400px;
+}/*# sourceMappingURL=ProjectPage.module.css.map */

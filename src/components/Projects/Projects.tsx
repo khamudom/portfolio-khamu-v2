@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectTile from '../ProjectTile/ProjectTile';
 import styles from './Projects.module.scss';
-import { ProjectsData } from './data/projectsData';
+import { ProjectsData } from './data/ProjectsData';
 
 type ProjectsProps = {
   className?: string;
@@ -10,7 +10,7 @@ type ProjectsProps = {
 const Projects = ({ className }: ProjectsProps) => {
   return (
     <>
-      <section className={className}>
+      <section className={className} id="projects">
         <div className={styles.container}>
           <div className={styles.sectionHeader}>
             <h2 className={styles.title}>projects</h2>
@@ -20,7 +20,7 @@ const Projects = ({ className }: ProjectsProps) => {
             {ProjectsData.map((item) => (
               <li key={item.id}>
                 <ProjectTile
-                  width={330}
+                  width={300}
                   height={186}
                   imgSrc={item.imgSrc}
                   imgAlt={item.imgAlt}
@@ -28,6 +28,7 @@ const Projects = ({ className }: ProjectsProps) => {
                   href={item.href}
                   target={'_self'}
                   skills={item.skills}
+                  projectType={item.projectType}
                 />
               </li>
             ))}

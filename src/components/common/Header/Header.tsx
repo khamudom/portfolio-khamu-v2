@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React from 'react';
 import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
 import { FiMail } from 'react-icons/fi';
@@ -16,7 +16,7 @@ const navigationItems = [
   {
     id: 1,
     title: 'Projects',
-    href: '/projects',
+    href: '/#projects',
   },
   // {
   //   id: 2,
@@ -82,7 +82,7 @@ const Header = () => {
               {item.icon}
             </Link>
           ))}
-          <FiMail />
+          {/* <FiMail /> */}
           <RxHamburgerMenu className={styles.hamburger} />
         </div>
       </div>

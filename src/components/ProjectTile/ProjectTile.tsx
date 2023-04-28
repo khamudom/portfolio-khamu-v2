@@ -16,6 +16,7 @@ interface ProjectTileProps {
   imgSrc?: string;
   imgAlt?: string;
   skills?: SkillsProps[];
+  projectType?: string;
 }
 
 const ProjectTile = ({
@@ -27,6 +28,7 @@ const ProjectTile = ({
   imgSrc,
   imgAlt,
   skills,
+  projectType,
 }: ProjectTileProps) => {
   return (
     <div
@@ -40,6 +42,7 @@ const ProjectTile = ({
           <a className={styles.anchor} href={href} target={target}>
             <span className={styles.title}>{title}</span>
           </a>
+          <p className={styles.type}>{projectType}</p>
           <ul className={styles.skills}>
             {skills?.map((item, index) => (
               <li key={index}>

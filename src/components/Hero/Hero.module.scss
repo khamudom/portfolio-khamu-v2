@@ -25,26 +25,4 @@
     column-gap: 12px;
     margin-top: 20px;
   }
-
-  .btn {
-    display: inline-block;
-    padding: 0.5em 1em;
-    border: 1px solid var(--dark-one);
-    background-color: var(--light-one);
-    color: var(--dark-one);
-    border-radius: 0.25rem;
-    font-size: 1rem;
-
-    .btnContent {
-      display: flex;
-      align-items: center;
-      column-gap: 4px;
-    }
-
-    &:hover,
-    &:focus {
-      background-color: var(--dark-one);
-      color: var(--light-one);
-    }
-  }
 }
