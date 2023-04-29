@@ -9,7 +9,7 @@ const edge = () => {
     <PageLayout page={edgePageData}>
       <section className={styles.section}>
         <div className={styles.row}>
-          <div className={styles.image}>
+          <div className={styles.imageWrapper}>
             <img src="../assets/images/edge/coupon.png" alt="coupon" />
             <p>Shopping flyout</p>
           </div>
@@ -45,7 +45,7 @@ const edge = () => {
               for ads within the feed.
             </p>
           </div>
-          <div className={styles.image}>
+          <div className={styles.imageWrapper}>
             <img src="../assets/images/edge/feed.png" alt="feed" />
             <p>News feed</p>
           </div>
@@ -54,7 +54,7 @@ const edge = () => {
 
       <section className={styles.section}>
         <div className={styles.row}>
-          <div className={styles.image}>
+          <div className={styles.imageWrapper}>
             <img src="../assets/images/edge/vert-tab.png" alt="vertical tab" />
             <p>Vertical tabs</p>
           </div>
@@ -106,7 +106,7 @@ const edge = () => {
               that were visually broken in high contrast.
             </p>
           </div>
-          <div className={styles.image}>
+          <div className={styles.imageWrapper}>
             <img src="../assets/images/edge/devtool-hc.png" alt="devtool" />
             <span>
               <p>This is set to high contrast dark theme</p>

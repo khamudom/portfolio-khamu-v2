@@ -90,3 +90,23 @@ export const edgePageData: IPageData = {
     },
   ],
 };
+
+export const gameStorePageData: IPageData = {
+  title: 'Game On',
+  description: [''],
+  tech: ['React', 'Next JS', 'Typescript', 'Sass'],
+  link: [
+    {
+      id: 0,
+      title: 'Demo',
+      href: 'https://radiant-malasada-04173f.netlify.app/',
+      icon: FiGlobe,
+    },
+    {
+      id: 1,
+      title: 'Source Code',
+      href: 'https://github.com/khamudom/site-store-game',
+      icon: AiOutlineGithub,
+    },
+  ],
+};

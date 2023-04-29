@@ -41,7 +41,7 @@ const fast = () => {
 
       <section className={styles.section}>
         <div className={styles.row}>
-          <div className={styles.image}>
+          <div className={styles.imageWrapper}>
             <img
               src="../assets//images/fast/fast-site.png"
               alt="fast portfolio"
@@ -152,7 +152,7 @@ const fast = () => {
               and I addressing any style issues.
             </p>
           </div>
-          <div className={styles.image}>
+          <div className={styles.imageWrapper}>
             <img src="../assets/images/fast/fluent.png" alt="fluent" />
           </div>
         </div>

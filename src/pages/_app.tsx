@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Kham Udom | UX Engineer</title>
         <meta name="description" content="Kham Portfolio" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/kulogo.ico" />
       </Head>
       <Header />
       <Component {...pageProps} />

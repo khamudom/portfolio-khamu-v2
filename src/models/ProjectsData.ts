@@ -90,6 +90,10 @@ export const ProjectsData = [
         iconAlt: 'react',
       },
       {
+        iconSrc: '/assets/images/skills/icon-next.png',
+        iconAlt: 'next js',
+      },
+      {
         iconSrc: '/assets/images/skills/icon-ts.png',
         iconAlt: 'ts',
       },
