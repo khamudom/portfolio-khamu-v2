@@ -1,60 +1,20 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1440px;
-  height: 100%;
-  padding: 60px 40px 40px;
-  margin: auto;
-}
-
-.headerSection {
-  max-width: 1024px;
-  margin: auto;
-  margin-bottom: 60px;
-}
-
-.headerWrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-
-.btnWrapper {
-  display: flex;
-  column-gap: 12px;
-}
-
-.technology {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 40px;
-
-  h3 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 10px;
-  }
-}
-
 .contentSection {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 1440px;
 
-  .dash,
-  .dash17,
-  .dashApp {
+  .screen,
+  .screen17,
+  .screenApp {
     display: flex;
     flex-direction: column;
     padding: 60px 0;
     text-align: center;
 
     p {
-      margin-bottom: 20px;
+      font-size: 14px;
+      margin-bottom: 16px;
     }
 
     .images {
@@ -70,7 +30,7 @@
     }
   }
 
-  .dash17 {
+  .screen17 {
     span {
       display: inline-flex;
       justify-content: center;
@@ -89,7 +49,7 @@
     }
   }
 
-  .dashApp {
+  .screenApp {
     .images {
       img {
         height: 400px;

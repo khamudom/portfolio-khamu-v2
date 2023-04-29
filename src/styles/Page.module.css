@@ -1,0 +1,50 @@
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1440px;
+}
+.contentSection .screen,
+.contentSection .screen17,
+.contentSection .screenApp {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 0;
+  text-align: center;
+}
+.contentSection .screen p,
+.contentSection .screen17 p,
+.contentSection .screenApp p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+.contentSection .screen .images,
+.contentSection .screen17 .images,
+.contentSection .screenApp .images {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.contentSection .screen .images img,
+.contentSection .screen17 .images img,
+.contentSection .screenApp .images img {
+  border-radius: 2px;
+  height: 300px;
+}
+.contentSection .screen17 span {
+  display: inline-flex;
+  justify-content: center;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+.contentSection .screen17 a {
+  text-decoration: underline;
+}
+.contentSection .screen17 .video iframe {
+  height: 500px;
+  width: 889px;
+}
+.contentSection .screenApp .images img {
+  height: 400px;
+}/*# sourceMappingURL=Page.module.css.map */

@@ -20,7 +20,7 @@ const Projects = ({ className }: ProjectsProps) => {
             {ProjectsData.map((item) => (
               <li key={item.id}>
                 <ProjectTile
-                  width={300}
+                  width={280}
                   height={186}
                   imgSrc={item.imgSrc}
                   imgAlt={item.imgAlt}
