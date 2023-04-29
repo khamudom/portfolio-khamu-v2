@@ -1,7 +1,7 @@
 import React from 'react';
 import ProjectTile from '../ProjectTile/ProjectTile';
 import styles from './Projects.module.scss';
-import { ProjectsData } from './data/ProjectsData';
+import { ProjectsData } from '../../models/ProjectsData';
 
 type ProjectsProps = {
   className?: string;

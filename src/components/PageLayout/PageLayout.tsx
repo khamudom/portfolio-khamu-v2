@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './PageLayout.module.scss';
 import ProjectPageHeader from './PageLayoutHeader/PageLayoutHeader';
-import { IPageData } from '@/pages/pageData';
+import { IPageData } from '@/models/PageData';
 
 interface ProjectPageProps {
   children?: React.ReactNode;

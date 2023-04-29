@@ -1,24 +1,27 @@
 /* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { PageLayout } from '@/components';
-import { xboxPageData } from './pageData';
+import { xboxPageData } from '../models/PageData';
 import styles from '../styles/Page.module.scss';
 import YouTube from 'react-youtube';
 
 const xbox = () => {
   return (
     <PageLayout page={xboxPageData}>
-      <section className={styles.contentSection}>
-        <div className={styles.screen}>
-          <p>2013 Dashboard release</p>
-          <div className={styles.images}>
+      <section className={styles.section}>
+        <div className={styles.column}>
+          <h3>2013 Dashboard release</h3>
+          <div className={styles.imageWrapper}>
             <img src="/assets/images/xbox/dash2013.png" alt="dashboard 2013" />
             <img src="/assets/images/xbox/dash2013game.png" alt="games 2013" />
           </div>
         </div>
-        <div className={styles.screen}>
-          <p>2015 Dashboard release</p>
-          <div className={styles.images}>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.column}>
+          <h3>2015 Dashboard release</h3>
+          <div className={styles.imageWrapper}>
             <img src="/assets/images/xbox/D2015Home.png" alt="dash 2015 home" />
             <img
               src="/assets/images/xbox/D2015Community.png"
@@ -34,9 +37,12 @@ const xbox = () => {
             />
           </div>
         </div>
-        <div className={styles.screen17}>
-          <span>
-            <p>2017 Dashboard release</p>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.column}>
+          <span className={styles.inlineText}>
+            <h3>2017 Dashboard release</h3>
             <a
               href="https://news.xbox.com/en-us/2017/10/16/fall-update-xbox-one-2017/"
               target="_blank"
@@ -46,9 +52,12 @@ const xbox = () => {
           </span>
           <YouTube className={styles.video} videoId="s946FOBDmDk" />
         </div>
-        <div className={styles.screenApp}>
-          <p>Details and Game and Apps pages</p>
-          <div className={styles.images}>
+      </section>
+
+      <section className={styles.section}>
+        <div className={styles.column}>
+          <h3>Details and Game and Apps pages</h3>
+          <div className={`${styles.imageWrapper} ${styles.details}`}>
             <img src="/assets/images/xbox/Details01.png" alt="details page" />
             <img
               src="/assets/images/xbox/GamesAndApps.png"

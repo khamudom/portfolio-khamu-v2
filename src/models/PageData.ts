@@ -36,7 +36,10 @@ export const xboxPageData: IPageData = {
 export const fastPageData: IPageData = {
   title: 'FAST',
   description: [
-    'An open source project, FAST is a layered framework built on native browser web component APIs.',
+    'As a collaborator on the FAST open source team, I contributed to developing and maintaining components using React and Web Component technology.',
+    'Collaborate with design and engineering team to own, build and maintain Web Components for multiple web experiences for Microsoft Edge, Edge Shopping feature and Microsoft News feed.',
+    'Focused on accessibility to make sure the components are aligned with the W3C ARIA standards. I also addressed the high contrast styles for the components within FAST, Fluent UI, Microsoft Edge and the Chromium developer tools.',
+    'Support and assist developers within Microsoft and the open source community to help adopt and integrate the FAST and Fluent UI components.',
   ],
   tech: [
     'Open Source',
@@ -66,7 +69,7 @@ export const fastPageData: IPageData = {
 export const edgePageData: IPageData = {
   title: 'Microsoft Edge',
   description: [
-    'Collaborated with the design team to build web components for multiple experiences for Microsoft Edge, Edge Shopping and Microsoft News',
+    'Collaborate with design and engineering team to own, build and maintain Web Components for multiple web experiences for Microsoft Edge, Edge Shopping feature and Microsoft News feed.',
   ],
   tech: [
     'FAST',

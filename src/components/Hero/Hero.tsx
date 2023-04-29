@@ -19,13 +19,10 @@ const Hero = ({ className }: HeroProps) => {
             </h2>
             <p className={styles.description}>
               Passionate about design, animation and technology to build and
-              implement accessible and inclusive user interfaces user
-              experiences from prototypes to production.
+              implement accessible and inclusive user interfaces and experiences
+              from prototypes to production.
             </p>
             <div className={styles.btnContainer}>
-              {/* <a href="#about" className={styles.btn}>
-                ABOUT ME
-              </a> */}
               <Button href="./assets/KhamU-resume.pdf" download>
                 <FiDownload />
                 RESUME

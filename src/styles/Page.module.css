@@ -1,50 +1,69 @@
-.contentSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.section {
   max-width: 1440px;
+  padding: 60px 0;
 }
-.contentSection .screen,
-.contentSection .screen17,
-.contentSection .screenApp {
+.section .column {
   display: flex;
   flex-direction: column;
-  padding: 60px 0;
   text-align: center;
 }
-.contentSection .screen p,
-.contentSection .screen17 p,
-.contentSection .screenApp p {
+.section .column h3 {
   font-size: 14px;
+  font-weight: 400;
   margin-bottom: 16px;
 }
-.contentSection .screen .images,
-.contentSection .screen17 .images,
-.contentSection .screenApp .images {
+.section .column .imageWrapper {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 12px;
 }
-.contentSection .screen .images img,
-.contentSection .screen17 .images img,
-.contentSection .screenApp .images img {
+.section .column .imageWrapper img {
   border-radius: 2px;
   height: 300px;
 }
-.contentSection .screen17 span {
+.section .column .inlineText {
   display: inline-flex;
   justify-content: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
 }
-.contentSection .screen17 a {
+.section .column a {
   text-decoration: underline;
 }
-.contentSection .screen17 .video iframe {
+.section .column .video iframe {
   height: 500px;
   width: 889px;
 }
-.contentSection .screenApp .images img {
+.section .column .details img {
   height: 400px;
+}
+.section .row {
+  display: flex;
+  -moz-column-gap: 4%;
+       column-gap: 4%;
+}
+.section .row .image {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+.section .row .image img {
+  height: 330px;
+}
+.section .row .image p {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+}
+.section .row .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.section .row .description .heading {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1em;
 }/*# sourceMappingURL=Page.module.css.map */

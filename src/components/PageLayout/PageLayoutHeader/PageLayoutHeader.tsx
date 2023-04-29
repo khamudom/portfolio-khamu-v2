@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './PageLayoutHeader.module.scss';
 import Button from '../../common/Button/Button';
-import { IPageLinkData } from '@/pages/pageData';
+import { IPageLinkData } from '@/models/PageData';
 
 interface ProjectPageProps {
   title?: string;

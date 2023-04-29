@@ -3,32 +3,34 @@
   margin: auto;
   margin-bottom: 60px;
 }
-
-.wrapper {
+.container .wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
-
-.btnWrapper {
+.container .wrapper .btnWrapper {
   display: flex;
   -moz-column-gap: 12px;
        column-gap: 12px;
 }
-
-.technology {
+.container .description {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.container .technology {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
 }
-.technology h3 {
+.container .technology h3 {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 10px;
 }
-.technology span {
+.container .technology span {
   display: flex;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
 }/*# sourceMappingURL=PageLayoutHeader.module.css.map */
