@@ -21,7 +21,7 @@ const Projects = ({ className }: ProjectsProps) => {
               <li key={item.id}>
                 <ProjectTile
                   width={280}
-                  height={186}
+                  height={233}
                   imgSrc={item.imgSrc}
                   imgAlt={item.imgAlt}
                   title={item.title}

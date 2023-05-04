@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './PageLayoutHeader.module.scss';
-import Button from '../../common/Button/Button';
-import { IPageLinkData } from '@/models/PageData';
+import Button from '../../Button/Button';
+import { PageLinkData } from '@/models/PageData';
 
 interface ProjectPageProps {
   title?: string;
   description?: string[];
   tech?: string[];
-  links?: IPageLinkData[];
+  links?: PageLinkData[];
 }
 
 const ProjectPageHeader = ({

@@ -22,9 +22,10 @@ const Footer = () => {
             </a>
           </div>
           <div className={styles.iconWrapper}>
-            <img src="./assets/images/skills/icon-react.png" alt="html" />
-            <img src="./assets/images/skills/icon-ts.png" alt="typescript" />
-            <img src="./assets/images/skills/icon-scss.png" alt="scss" />
+            <img src="/assets/images/skills/icon-react.png" alt="react" />
+            <img src="/assets/images/skills/icon-next.png" alt="next js" />
+            <img src="/assets/images/skills/icon-ts.png" alt="typescript" />
+            <img src="/assets/images/skills/icon-scss.png" alt="scss" />
           </div>
         </div>
       </div>

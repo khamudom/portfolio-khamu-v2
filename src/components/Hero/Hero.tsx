@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Hero.module.scss';
 import { FiDownload } from 'react-icons/fi';
-import Button from '../common/Button/Button';
+import Button from '../Button/Button';
 
 type HeroProps = {
   className?: string;
@@ -23,7 +23,7 @@ const Hero = ({ className }: HeroProps) => {
               from prototypes to production.
             </p>
             <div className={styles.btnContainer}>
-              <Button href="./assets/KhamU-resume.pdf" download>
+              <Button href="/assets/KhamU-resume.pdf" download>
                 <FiDownload />
                 RESUME
               </Button>

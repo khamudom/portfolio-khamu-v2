@@ -2,21 +2,21 @@ import { IconType } from 'react-icons';
 import { FiGlobe } from 'react-icons/fi';
 import { AiOutlineGithub } from 'react-icons/ai';
 
-export interface IPageLinkData {
+export interface PageLinkData {
   id: number;
   title: string;
   href: string;
   icon: IconType;
 }
 
-export interface IPageData {
+export interface PageData {
   title: string;
   description: string[];
   tech: string[];
-  link: IPageLinkData[];
+  link: PageLinkData[];
 }
 
-export const xboxPageData: IPageData = {
+export const xboxPageData: PageData = {
   title: 'Xbox One Dashboard',
   description: [
     'Create, contribute, iterate and own the UI and UX experiences on the Xbox Dashboard, from the launch of the Xbox One to the release of the Xbox One SX',
@@ -33,7 +33,7 @@ export const xboxPageData: IPageData = {
   ],
 };
 
-export const fastPageData: IPageData = {
+export const fastPageData: PageData = {
   title: 'FAST',
   description: [
     'As a collaborator on the FAST open source team, I contributed to developing and maintaining components using React and Web Component technology.',
@@ -66,21 +66,12 @@ export const fastPageData: IPageData = {
   ],
 };
 
-export const edgePageData: IPageData = {
+export const edgePageData: PageData = {
   title: 'Microsoft Edge',
   description: [
     'Collaborate with design and engineering team to own, build and maintain Web Components for multiple web experiences for Microsoft Edge, Edge Shopping feature and Microsoft News feed.',
   ],
-  tech: [
-    'FAST',
-    'JavaScript',
-    'Typescript',
-    'Web Component',
-    'HTML',
-    'CSS',
-    'Chromium',
-    'Gerrit',
-  ],
+  tech: ['FAST', 'JavaScript', 'Web Component', 'Chromium', 'Gerrit'],
   link: [
     {
       id: 0,
@@ -91,10 +82,12 @@ export const edgePageData: IPageData = {
   ],
 };
 
-export const gameStorePageData: IPageData = {
+export const gameStorePageData: PageData = {
   title: 'Game On',
-  description: [''],
-  tech: ['React', 'Next JS', 'Typescript', 'Sass'],
+  description: [
+    'Game On is a made up online game store. The idea for building this site was a personal exercise to search for a random design online and build out the UI. It is not fully functional, but I added a few animations to the buttons. The site is responsive and works on all device sizes.',
+  ],
+  tech: ['React', 'Typescript', 'CSS'],
   link: [
     {
       id: 0,

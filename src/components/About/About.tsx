@@ -25,16 +25,16 @@ const About = ({ className }: AboutProps) => {
                     to game the system to get anything they want.
                   </p>
                   <div className="img-me">
-                    <img src="./assets/img/about/me04.jpg" alt="me" />
-                    <img src="./assets/img/about/peru.jpg" alt="peru" />
-                    <img src="./assets/img/about/turtle.jpg" alt="turtle" />
-                    <img src="./assets/img/about/swselfie.jpg" alt="selfie" />
+                    <img src="/assets/img/about/me04.jpg" alt="me" />
+                    <img src="/assets/img/about/peru.jpg" alt="peru" />
+                    <img src="/assets/img/about/turtle.jpg" alt="turtle" />
+                    <img src="/assets/img/about/swselfie.jpg" alt="selfie" />
                   </div>
                 </div>
                 <div className="dog-info">
                   <div className="dog">
                     <img
-                      src="./assets/img/about/milo.png"
+                      src="/assets/img/about/milo.png"
                       alt="milo"
                       className="img-milo"
                     />
@@ -47,7 +47,7 @@ const About = ({ className }: AboutProps) => {
                   </div>
                   <div className="dog">
                     <img
-                      src="./assets/img/about/lenny.png"
+                      src="/assets/img/about/lenny.png"
                       alt="lenny"
                       className="img-lenny"
                     />

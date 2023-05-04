@@ -19,8 +19,8 @@
   gap: 12px;
 }
 .section .column .imageWrapper img {
-  border-radius: 2px;
   height: 300px;
+  border-radius: 4px;
 }
 .section .column .inlineText {
   display: inline-flex;
@@ -35,25 +35,24 @@
   height: 500px;
   width: 889px;
 }
-.section .column .details img {
-  height: 400px;
-}
 .section .row {
   display: flex;
   -moz-column-gap: 4%;
        column-gap: 4%;
+  max-width: 1024px;
 }
-.section .row .image {
+.section .row .imageWrapper {
   display: flex;
   flex-direction: column;
   row-gap: 6px;
 }
-.section .row .image img {
+.section .row .imageWrapper img {
   height: 330px;
+  border-radius: 4px;
 }
-.section .row .image p {
+.section .row .imageWrapper .caption {
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   font-style: italic;
 }
 .section .row .description {
@@ -66,4 +65,15 @@
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1em;
+}
+.section .row .details img,
+.section .column .details img {
+  height: 400px;
+  border-radius: 4px;
+}
+.section .bottomElement {
+  margin-top: 40px;
+}
+.section .code {
+  height: 400px;
 }/*# sourceMappingURL=Page.module.css.map */

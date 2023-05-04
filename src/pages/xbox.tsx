@@ -10,7 +10,9 @@ const xbox = () => {
     <PageLayout page={xboxPageData}>
       <section className={styles.section}>
         <div className={styles.column}>
-          <h3>2013 Dashboard release</h3>
+          <span className={styles.inlineText}>
+            <h2 className={styles.xheading}>2013 Dashboard release</h2>
+          </span>
           <div className={styles.imageWrapper}>
             <img src="/assets/images/xbox/dash2013.png" alt="dashboard 2013" />
             <img src="/assets/images/xbox/dash2013game.png" alt="games 2013" />
@@ -20,7 +22,9 @@ const xbox = () => {
 
       <section className={styles.section}>
         <div className={styles.column}>
-          <h3>2015 Dashboard release</h3>
+          <span className={styles.inlineText}>
+            <h2 className={styles.xheading}>2015 Dashboard release</h2>
+          </span>
           <div className={styles.imageWrapper}>
             <img src="/assets/images/xbox/D2015Home.png" alt="dash 2015 home" />
             <img
@@ -42,8 +46,9 @@ const xbox = () => {
       <section className={styles.section}>
         <div className={styles.column}>
           <span className={styles.inlineText}>
-            <h3>2017 Dashboard release</h3>
+            <h2 className={styles.xheading}>2017 Dashboard release</h2>
             <a
+              className={styles.link}
               href="https://news.xbox.com/en-us/2017/10/16/fall-update-xbox-one-2017/"
               target="_blank"
             >
@@ -56,7 +61,9 @@ const xbox = () => {
 
       <section className={styles.section}>
         <div className={styles.column}>
-          <h3>Details and Game and Apps pages</h3>
+          <span className={styles.inlineText}>
+            <h2 className={styles.xheading}>Details and Game and Apps pages</h2>
+          </span>
           <div className={`${styles.imageWrapper} ${styles.details}`}>
             <img src="/assets/images/xbox/Details01.png" alt="details page" />
             <img
