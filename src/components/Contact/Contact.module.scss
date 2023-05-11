@@ -28,6 +28,11 @@
       width: 23.375rem;
       height: 2.25rem;
 
+      &:hover {
+        border: 1px solid var(--accent-fill-three);
+        outline: none;
+      }
+
       &:focus-visible {
         border: 2px solid var(--accent-fill-two);
         outline: none;

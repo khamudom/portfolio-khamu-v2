@@ -73,7 +73,6 @@
     }
 
     .type {
-      align-items: center;
       display: flex;
       justify-content: center;
       width: 100%;
@@ -82,6 +81,7 @@
       color: var(--light-one);
       opacity: 0;
       pointer-events: none;
+      font-size: 1em;
     }
 
     .skills {
@@ -118,7 +118,7 @@
 
     .type {
       opacity: 1;
-      transform: translateY(20px) scale(1, 1);
+      transform: translateY(30px) scale(1, 1);
       transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
     }
 

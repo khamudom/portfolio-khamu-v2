@@ -26,6 +26,10 @@
   width: 23.375rem;
   height: 2.25rem;
 }
+.container .form .input:hover {
+  border: 1px solid var(--accent-fill-three);
+  outline: none;
+}
 .container .form .input:focus-visible {
   border: 2px solid var(--accent-fill-two);
   outline: none;
