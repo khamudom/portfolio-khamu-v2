@@ -16,6 +16,7 @@ const ProjectPageHeader = ({
   tech,
   links,
 }: ProjectPageProps) => {
+  const dot = '\u00B7';
   return (
     <section className={styles.container}>
       <div className={styles.wrapper}>
@@ -47,7 +48,7 @@ const ProjectPageHeader = ({
           {tech?.map((item, index) => (
             <span key={index}>
               <p>{item}</p>
-              {index !== tech.length - 1 && '-'}
+              {index !== tech.length - 1 && `${dot}`}
             </span>
           ))}
         </span>
