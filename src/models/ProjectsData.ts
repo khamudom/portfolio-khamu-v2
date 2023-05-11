@@ -1,9 +1,9 @@
 export const ProjectsData = [
   {
     id: 0,
-    title: 'Xbox',
+    title: 'Xbox Dashboard',
     href: '/xbox',
-    imgSrc: '/assets/images/projects/xdash.png',
+    imgSrc: '/assets/images/projects/xdash.jpg',
     imgAlt: 'Xbox dashboard image',
     projectType: 'Product',
     skills: [
@@ -17,7 +17,7 @@ export const ProjectsData = [
     id: 1,
     title: 'FAST',
     href: '/fast',
-    imgSrc: '/assets/images/projects/fast.png',
+    imgSrc: '/assets/images/projects/fast.jpg',
     imgAlt: 'fast image',
     projectType: 'Open Source',
     skills: [
@@ -51,7 +51,7 @@ export const ProjectsData = [
     id: 2,
     title: 'Microsoft Edge',
     href: '/edge',
-    imgSrc: '/assets/images/projects/edge.png',
+    imgSrc: '/assets/images/projects/edge.jpg',
     imgAlt: 'edge image',
     projectType: 'Product',
     skills: [
@@ -79,11 +79,11 @@ export const ProjectsData = [
   },
   {
     id: 3,
-    title: 'Game Store',
+    title: 'Game On',
     href: '/gamestore',
-    imgSrc: '/assets/images/projects/gamestore.png',
+    imgSrc: '/assets/images/projects/gameon.jpg',
     imgAlt: 'game store image',
-    projectType: 'Web Development',
+    projectType: 'Web Development UI',
     skills: [
       {
         iconSrc: '/assets/images/skills/icon-react.png',

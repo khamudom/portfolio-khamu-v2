@@ -1,8 +1,8 @@
-/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { PageLayout } from '@/components';
 import { edgePageData } from '../models/PageData';
 import styles from '../styles/Page.module.scss';
+import Image from 'next/image';
 
 const edge = () => {
   return (
@@ -10,21 +10,27 @@ const edge = () => {
       <section className={styles.section}>
         <div className={styles.column}>
           <div className={styles.row}>
-            <div className={styles.imageWrapper}>
-              <img src="/assets/images/edge/coupon.png" alt="coupon" />
+            <div className={styles.imageColumnWrapper}>
+              <Image
+                src="/assets/images/edge/shop-coupon.png"
+                alt="coupon"
+                height={450}
+                width={360.85}
+              />
               <p className={styles.caption}>Shopping flyout</p>
             </div>
             <div className={styles.description}>
-              <h2 className={styles.heading}>Edge shopping</h2>
+              <h2 className={styles.heading}>Microsoft Edge shopping</h2>
               <p>
-                Edge has a built in feature to share multiple ways with online
-                shoppers to help save money.
+                A feature to share multiple ways to help online shoppers save
+                money.
               </p>
               <br />
               <p>
-                Working with the design team, I contributed the coupon, cashback
-                and shopping-recommendation components. The components are then
-                consumed and implemented by our developing partners.
+                Components built for this features are coupon, cashback and
+                shopping-recommendation. <br />
+                The components are consumed and implemented by our developing
+                partners.
               </p>
             </div>
           </div>
@@ -35,22 +41,22 @@ const edge = () => {
         <div className={styles.column}>
           <div className={styles.row}>
             <div className={styles.description}>
-              <h2 className={styles.heading}>Edge news feed</h2>
-              <p>
-                The browser has a customizable news feed feature that allows
-                users to see news articles and other content from their favorite
-                websites and news sources.
-              </p>
+              <h2 className={styles.heading}>Edge News Feed</h2>
+              <p>The browser has a customizable news feed feature.</p>
               <br />
               <p>
-                I helped iterate on the article component, along with updating
-                the native-ad and info-pane-ad components, which are used
-                specifically for ads within the feed.
+                I helped iterate on the article, info-pane-ad and native-ad
+                components, which are the main components you see on the feed.
               </p>
             </div>
-            <div className={styles.imageWrapper}>
-              <img src="/assets/images/edge/feed.png" alt="feed" />
-              <p className={styles.caption}>News feed</p>
+            <div className={styles.imageColumnWrapper}>
+              <Image
+                src="/assets/images/edge/feed.png"
+                alt="feed"
+                width={598.04}
+                height={400}
+              />
+              <p className={styles.caption}>News Feed 1.0</p>
             </div>
           </div>
         </div>
@@ -58,25 +64,26 @@ const edge = () => {
 
       <section className={styles.section}>
         <div className={styles.row}>
-          <div className={styles.imageWrapper}>
-            <img
-              className={styles.gif}
+          <div className={styles.imageColumnWrapper}>
+            <Image
               src="/assets/images/edge/verticaltab.gif"
               alt="vertical tab"
+              width={550}
+              height={367.87}
             />
             <p className={styles.caption}>Vertical tabs</p>
           </div>
           <div className={styles.description}>
             <h2 className={styles.heading}>Vertical tabs</h2>
             <p>
-              Edge has the ability to set vertical tabs. It allows the users to
-              view tabs on the side of the browser instead of up top.
+              Vertical tabs allows the users to dock their tabs on the side of
+              the browser window.
             </p>
             <br />
             <p>
-              Collaborating with the project manager and the motion designer, I
-              created a prototype to help the team iterate on the slide out
-              animation of the tab panel when it is in the collapsed state.
+              I built a prototype to help the motion designer iterate on the
+              slide out and in animation of the tab panel when it is in the
+              collapsed state.
             </p>
           </div>
         </div>
@@ -87,7 +94,7 @@ const edge = () => {
           <div className={styles.description}>
             <h2 className={styles.heading}>High Contrast in Developer Tools</h2>
             <p>
-              A big contribution to Edge was making sure, when
+              A big contribution to Edge and Chromium was making sure, when
               <a
                 className={styles.link}
                 href="https://developer.mozilla.org/en-US/docs/Web/CSS/@media/forced-colors"
@@ -105,7 +112,7 @@ const edge = () => {
               >
                 Windows high contrast
               </a>
-              mode, is enabled, the developer tools were also accessible.
+              mode, is enabled, the developer tools are visually accessible.
             </p>
             <br />
             <p>
@@ -114,12 +121,15 @@ const edge = () => {
               that were visually broken in high contrast.
             </p>
           </div>
-          <div className={styles.imageWrapper}>
-            <img src="/assets/images/edge/devtool-hc.png" alt="devtool" />
+          <div className={styles.imageColumnWrapper}>
+            <Image
+              src="/assets/images/edge/devtool-hc.png"
+              alt="devtool"
+              width={550}
+              height={367.87}
+            />
 
-            <p className={styles.caption}>
-              This is set to high contrast dark theme
-            </p>
+            <p className={styles.caption}>High contrast dark theme</p>
           </div>
         </div>
       </section>

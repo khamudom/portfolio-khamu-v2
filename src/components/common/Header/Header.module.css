@@ -6,7 +6,7 @@
   width: 100%;
   margin: auto;
   padding: 40px;
-  font-size: 16px;
+  font-size: 1.125em;
   color: var(--dark-one);
 }
 .container .logoWrapper {
@@ -24,29 +24,43 @@
 }
 .container .navLinks ul {
   display: flex;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.container .navLinks ul li {
+  padding: 2px;
 }
 .container .navLinks ul .link {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+}
+.container .navLinks ul .link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent-fill-three);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.2s ease-in-out;
 }
 .container .navLinks ul .link svg {
   width: 18px;
   height: 18px;
 }
-.container .navLinks ul .link .chevron {
-  opacity: 0;
-  transition: opacity 300ms ease-in;
+.container .navLinks ul .link.link:hover {
+  color: var(--accent-fill-two);
+}
+.container .navLinks ul .link.link:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 .container .navLinks ul .link.link:hover span {
-  font-weight: 500;
   transition: all 300ms ease-in;
-}
-.container .navLinks ul .link.link:hover .chevron {
-  opacity: 1;
-  fill: currentColor;
 }
 .container .accounts {
   display: flex;
@@ -62,8 +76,6 @@
 .container .accounts .hamburger {
   display: none;
 }
-@media screen and (max-width: 850px) {
-  .container .accounts .hamburger {
-    display: block;
-  }
+.container .accounts a:hover svg {
+  fill: var(--accent-fill-two);
 }/*# sourceMappingURL=Header.module.css.map */

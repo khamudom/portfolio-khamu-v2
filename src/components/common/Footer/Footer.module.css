@@ -26,12 +26,12 @@
   margin-bottom: 4px;
 }
 .footer .container .wrapper .siteInfo .text {
-  font-size: 0.8125rem;
+  font-size: 0.8125em;
   color: var(--dark-one);
 }
 .footer .container .wrapper .siteInfo a {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.2em;
   color: var(--dark-one);
   -webkit-margin-start: 0.2rem;
           margin-inline-start: 0.2rem;

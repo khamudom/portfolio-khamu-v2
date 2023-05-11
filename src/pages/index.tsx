@@ -6,8 +6,8 @@ export default function Home() {
     <>
       <main className={`${styles.main}`}>
         <Hero className={styles.hero} />
-        <Projects className={styles.projectSection} />
-        {/* <Contact className={styles.contactSection} /> */}
+        <Projects className={styles.section} />
+        <Contact className={styles.section} />
         {/* <About className={styles.aboutSection} /> */}
       </main>
     </>

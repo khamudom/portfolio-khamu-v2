@@ -3,6 +3,10 @@
   margin: auto;
   margin-bottom: 60px;
 
+  .title {
+    font-size: 1.5em;
+  }
+
   .wrapper {
     display: flex;
     justify-content: space-between;
@@ -27,7 +31,7 @@
     margin-top: 40px;
 
     h3 {
-      font-size: 18px;
+      font-size: 1.125em;
       font-weight: 500;
       margin-bottom: 10px;
     }

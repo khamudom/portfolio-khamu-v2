@@ -18,11 +18,11 @@ const navigationItems = [
     title: 'Projects',
     href: '/#projects',
   },
-  // {
-  //   id: 2,
-  //   title: 'Contact',
-  //   href: '/contact',
-  // },
+  {
+    id: 2,
+    title: 'Contact',
+    href: '/#contact',
+  },
   // {
   //   id: 3,
   //   title: 'About',
@@ -63,11 +63,11 @@ const Header = () => {
         <div className={styles.navLinks}>
           <ul>
             {navigationItems.map((item) => (
-              <Link href={item.href} className={styles.link} key={item.id}>
-                <BiChevronLeft className={styles.chevron} />
-                <span>{item.title}</span>
-                <BiChevronRight className={styles.chevron} />
-              </Link>
+              <li key={item.id}>
+                <Link href={item.href} className={styles.link}>
+                  <span>{item.title}</span>
+                </Link>
+              </li>
             ))}
           </ul>
         </div>
@@ -83,7 +83,7 @@ const Header = () => {
             </Link>
           ))}
           {/* <FiMail /> */}
-          <RxHamburgerMenu className={styles.hamburger} />
+          {/* <RxHamburgerMenu className={styles.hamburger} /> */}
         </div>
       </div>
     </header>

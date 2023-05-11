@@ -10,14 +10,13 @@
 .hero {
   display: flex;
   height: calc(100vh - 130px);
-  width: 100vw;
   margin: auto;
   align-items: center;
   padding-bottom: 10%;
 }
 
-.projectSection {
+.section {
   display: flex;
   width: 100%;
-  padding-bottom: 300px;
+  padding-bottom: 200px;
 }

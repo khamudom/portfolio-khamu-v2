@@ -1,0 +1,10 @@
+.toast {
+  background: linear-gradient(
+    to right,
+    var(--accent-fill-two),
+    var(--accent-fill-three)
+  );
+  color: var(--light-one);
+  padding: 20px;
+  border-radius: 4px;
+}

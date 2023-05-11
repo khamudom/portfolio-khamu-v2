@@ -1,35 +1,20 @@
 .section {
   max-width: 1440px;
   padding: 60px 0;
+  font-size: 1.0625em;
 }
 .section .column {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.section .column h3 {
-  font-size: 14px;
-  font-weight: 400;
-  margin-bottom: 16px;
-}
-.section .column .imageWrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-.section .column .imageWrapper img {
-  height: 300px;
-  border-radius: 4px;
-}
 .section .column .inlineText {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   -moz-column-gap: 8px;
        column-gap: 8px;
-}
-.section .column a {
-  text-decoration: underline;
+  margin-bottom: 16px;
 }
 .section .column .video iframe {
   height: 500px;
@@ -41,39 +26,61 @@
        column-gap: 4%;
   max-width: 1024px;
 }
-.section .row .imageWrapper {
-  display: flex;
-  flex-direction: column;
-  row-gap: 6px;
-}
-.section .row .imageWrapper img {
-  height: 330px;
-  border-radius: 4px;
-}
-.section .row .imageWrapper .caption {
-  text-align: center;
-  font-size: 14px;
-  font-style: italic;
-}
 .section .row .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: left;
 }
-.section .row .description .heading {
+.section .row .details .image,
+.section .column .details .image {
+  height: 400px;
+  border-radius: 4px;
+}
+.section .row .heading,
+.section .column .heading {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25em;
   font-weight: 500;
   margin-bottom: 1em;
 }
-.section .row .details img,
-.section .column .details img {
-  height: 400px;
+.section .row .xheading,
+.section .column .xheading {
+  font-weight: 400;
+}
+.section .imageColumnWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+.section .imageColumnWrapper .caption {
+  text-align: center;
+  font-size: 0.875em;
+  font-style: italic;
+}
+.section .imageRowWrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  row-gap: 16px;
+}
+.section .imageColumnWrapper .image,
+.section .imageRowWrapper .image {
+  height: 300px;
+}
+.section img {
+  border: 1px solid var(--dark-one);
   border-radius: 4px;
 }
 .section .bottomElement {
   margin-top: 40px;
 }
-.section .code {
-  height: 400px;
+.section .link {
+  color: var(--accent-fill-one);
+  margin: 0 0.25rem;
+}
+.section .link:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=Page.module.css.map */

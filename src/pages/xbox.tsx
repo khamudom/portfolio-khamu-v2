@@ -13,9 +13,17 @@ const xbox = () => {
           <span className={styles.inlineText}>
             <h2 className={styles.xheading}>2013 Dashboard release</h2>
           </span>
-          <div className={styles.imageWrapper}>
-            <img src="/assets/images/xbox/dash2013.png" alt="dashboard 2013" />
-            <img src="/assets/images/xbox/dash2013game.png" alt="games 2013" />
+          <div className={styles.imageRowWrapper}>
+            <img
+              className={styles.image}
+              src="/assets/images/xbox/dash2013.png"
+              alt="dashboard 2013"
+            />
+            <img
+              className={styles.image}
+              src="/assets/images/xbox/dash2013game.png"
+              alt="games 2013"
+            />
           </div>
         </div>
       </section>
@@ -25,17 +33,24 @@ const xbox = () => {
           <span className={styles.inlineText}>
             <h2 className={styles.xheading}>2015 Dashboard release</h2>
           </span>
-          <div className={styles.imageWrapper}>
-            <img src="/assets/images/xbox/D2015Home.png" alt="dash 2015 home" />
+          <div className={styles.imageRowWrapper}>
             <img
+              className={styles.image}
+              src="/assets/images/xbox/D2015Home.png"
+              alt="dash 2015 home"
+            />
+            <img
+              className={styles.image}
               src="/assets/images/xbox/D2015Community.png"
               alt="dash 2015 community"
             />
             <img
+              className={styles.image}
               src="/assets/images/xbox/D2015OneGuide.png"
               alt="dash 2015 one guide"
             />
             <img
+              className={styles.image}
               src="/assets/images/xbox/D2015Store.png"
               alt="dash 2015 store"
             />
@@ -52,7 +67,7 @@ const xbox = () => {
               href="https://news.xbox.com/en-us/2017/10/16/fall-update-xbox-one-2017/"
               target="_blank"
             >
-              <p>More Details</p>
+              More details on the release.
             </a>
           </span>
           <YouTube className={styles.video} videoId="s946FOBDmDk" />
@@ -64,9 +79,14 @@ const xbox = () => {
           <span className={styles.inlineText}>
             <h2 className={styles.xheading}>Details and Game and Apps pages</h2>
           </span>
-          <div className={`${styles.imageWrapper} ${styles.details}`}>
-            <img src="/assets/images/xbox/Details01.png" alt="details page" />
+          <div className={`${styles.imageRowWrapper} ${styles.details}`}>
             <img
+              className={styles.image}
+              src="/assets/images/xbox/Details01.png"
+              alt="details page"
+            />
+            <img
+              className={styles.image}
               src="/assets/images/xbox/GamesAndApps.png"
               alt="my games and apps page"
             />

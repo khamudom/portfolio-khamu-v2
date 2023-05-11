@@ -17,5 +17,12 @@
   &:hover {
     background-color: var(--dark-one);
     color: var(--light-one);
+    cursor: pointer;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
   }
 }

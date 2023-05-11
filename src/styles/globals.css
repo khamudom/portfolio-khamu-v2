@@ -9,7 +9,9 @@
   --dark-three: #474747;
   --dark-four: #7a7a7a;
 
-  --accent-fill: #0177ed;
+  --accent-fill-one: #0177ed;
+  --accent-fill-two: #4720f5;
+  --accent-fill-three: #b60fcf;
 
   --main-background: var(--dark-two);
   --main-background-inverse: var(--light-two);

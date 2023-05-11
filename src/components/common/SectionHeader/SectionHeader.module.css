@@ -1,0 +1,21 @@
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 8em;
+  position: relative;
+}
+.sectionHeader .title {
+  font-weight: 600;
+  font-size: clamp(1.625rem, 5vw, 2rem);
+  background: linear-gradient(90deg, var(--accent-fill-two), var(--accent-fill-three));
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sectionHeader .divider {
+  opacity: 1;
+  width: 100%;
+  -webkit-margin-start: 1em;
+          margin-inline-start: 1em;
+}/*# sourceMappingURL=SectionHeader.module.css.map */

@@ -51,8 +51,6 @@ const Button = ({
         {...props}
       >
         <span className={styles.content}>{children}</span>
-        <span className={styles.btnBefore}></span>
-        <span className={styles.btnAfter}></span>
       </button>
     );
   }

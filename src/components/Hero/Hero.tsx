@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import styles from './Hero.module.scss';
 import { FiDownload } from 'react-icons/fi';
@@ -13,14 +14,13 @@ const Hero = ({ className }: HeroProps) => {
       <section className={className}>
         <div className={styles.container}>
           <div className={styles.columnLeft}>
-            <h1 className={styles.title}>Welcome</h1>
-            <h2 className={styles.subTitle}>
-              I am Kham, a design-minded front-end engineer.
+            <h2 className={styles.title}>
+              I am Kham, <br></br>a design-minded <br></br>front-end engineer
             </h2>
             <p className={styles.description}>
-              Passionate about design, animation and technology to build and
-              implement accessible and inclusive user interfaces and experiences
-              from prototypes to production.
+              Combining design, animation and technology to build and implement
+              accessible and inclusive user interfaces and experiences in
+              prototypes and web applications.
             </p>
             <div className={styles.btnContainer}>
               <Button href="/assets/KhamU-resume.pdf" download>

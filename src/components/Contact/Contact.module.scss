@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+
+  .form {
+    display: flex;
+    column-gap: 3%;
+    justify-content: center;
+
+    .inputWrapper {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        margin-bottom: 0.25em;
+      }
+
+      .textarea {
+        margin-bottom: 20px;
+      }
+    }
+
+    .input {
+      padding: 0.5em;
+      width: 23.375rem;
+      height: 2.25rem;
+
+      &:focus-visible {
+        border: 2px solid var(--accent-fill-two);
+        outline: none;
+      }
+    }
+
+    .textarea {
+      height: 12.1rem;
+      resize: none;
+    }
+
+    .columnLeft {
+      display: flex;
+      flex-direction: column;
+      row-gap: 1.25rem;
+    }
+
+    .btnSubmit {
+      outline: none;
+      margin-top: 1em;
+      float: right;
+      cursor: pointer;
+    }
+  }
+
+  .toastContainer {
+    position: absolute;
+    bottom: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+}

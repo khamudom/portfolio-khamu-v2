@@ -18,4 +18,11 @@
 .btn:hover {
   background-color: var(--dark-one);
   color: var(--light-one);
+  cursor: pointer;
+}
+.btn .content {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
 }/*# sourceMappingURL=Button.module.css.map */

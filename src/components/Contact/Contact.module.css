@@ -1,1 +1,54 @@
-/*# sourceMappingURL=Contact.module.css.map */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.container .form {
+  display: flex;
+  -moz-column-gap: 3%;
+       column-gap: 3%;
+  justify-content: center;
+}
+.container .form .inputWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.container .form .inputWrapper label {
+  margin-bottom: 0.25em;
+}
+.container .form .inputWrapper .textarea {
+  margin-bottom: 20px;
+}
+.container .form .input {
+  padding: 0.5em;
+  width: 23.375rem;
+  height: 2.25rem;
+}
+.container .form .input:focus-visible {
+  border: 2px solid var(--accent-fill-two);
+  outline: none;
+}
+.container .form .textarea {
+  height: 12.1rem;
+  resize: none;
+}
+.container .form .columnLeft {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+.container .form .btnSubmit {
+  outline: none;
+  margin-top: 1em;
+  float: right;
+  cursor: pointer;
+}
+.container .toastContainer {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}/*# sourceMappingURL=Contact.module.css.map */
