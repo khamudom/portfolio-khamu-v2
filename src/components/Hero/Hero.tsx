@@ -15,7 +15,7 @@ const Hero = ({ className }: HeroProps) => {
         <div className={styles.container}>
           <div className={styles.columnLeft}>
             <h2 className={styles.title}>
-              I am Kham, <br></br>a design-minded <br></br>front-end engineer
+              A design-minded <br></br>front-end engineer
             </h2>
             <p className={styles.description}>
               Combining design, animation and technology to build and implement

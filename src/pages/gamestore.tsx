@@ -1,9 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { PageLayout } from '@/components';
 import { gameStorePageData } from '@/models/PageData';
 import styles from '@/styles/Page.module.scss';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const gamestore = () => {
   return (
@@ -12,7 +12,7 @@ const gamestore = () => {
         <div className={styles.column}>
           <div className={styles.row}>
             <div className={`${styles.imageColumnWrapper} ${styles.details}`}>
-              <Image
+              <img
                 src="/assets/images/gamesite/game-desktop.png"
                 alt="coupon"
                 width={483.45}
@@ -21,7 +21,7 @@ const gamestore = () => {
               <p className={styles.caption}>Desktop</p>
             </div>
             <div className={`${styles.imageColumnWrapper} ${styles.details}`}>
-              <Image
+              <img
                 src="/assets/images/gamesite/game-tablet.png"
                 alt="coupon"
                 width={278.56}
@@ -30,7 +30,7 @@ const gamestore = () => {
               <p className={styles.caption}>Tablet</p>
             </div>
             <div className={`${styles.imageColumnWrapper} ${styles.details}`}>
-              <Image
+              <img
                 src="/assets/images/gamesite/game-mobile.png"
                 alt="coupon"
                 width={183.29}

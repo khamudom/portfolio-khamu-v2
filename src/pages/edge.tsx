@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { PageLayout } from '@/components';
 import { edgePageData } from '../models/PageData';
@@ -11,7 +12,7 @@ const edge = () => {
         <div className={styles.column}>
           <div className={styles.row}>
             <div className={styles.imageColumnWrapper}>
-              <Image
+              <img
                 src="/assets/images/edge/shop-coupon.png"
                 alt="coupon"
                 height={450}
@@ -50,7 +51,7 @@ const edge = () => {
               </p>
             </div>
             <div className={styles.imageColumnWrapper}>
-              <Image
+              <img
                 src="/assets/images/edge/feed.png"
                 alt="feed"
                 width={598.04}
@@ -65,7 +66,7 @@ const edge = () => {
       <section className={styles.section}>
         <div className={styles.row}>
           <div className={styles.imageColumnWrapper}>
-            <Image
+            <img
               src="/assets/images/edge/verticaltab.gif"
               alt="vertical tab"
               width={550}
@@ -122,7 +123,7 @@ const edge = () => {
             </p>
           </div>
           <div className={styles.imageColumnWrapper}>
-            <Image
+            <img
               src="/assets/images/edge/devtool-hc.png"
               alt="devtool"
               width={550}

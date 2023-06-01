@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { PageLayout } from '@/components';
 import React from 'react';
 import { fastPageData } from '../models/PageData';
@@ -10,7 +11,7 @@ const fast = () => {
       <section className={styles.section}>
         <div className={styles.row}>
           <div className={styles.imageColumnWrapper}>
-            <Image
+            <img
               src="/assets/images/fast/fast-site.png"
               alt="fast portfolio"
               width={600}

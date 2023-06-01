@@ -8,13 +8,6 @@
   .title {
     font-weight: 600;
     font-size: clamp(1.625rem, 5vw, 2rem);
-    background: linear-gradient(
-      90deg,
-      var(--accent-fill-two),
-      var(--accent-fill-three)
-    );
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
   .divider {
