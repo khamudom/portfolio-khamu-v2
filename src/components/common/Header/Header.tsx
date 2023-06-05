@@ -23,11 +23,6 @@ const navigationItems = [
     title: 'Contact',
     href: '/#contact',
   },
-  // {
-  //   id: 3,
-  //   title: 'About',
-  //   href: '/about',
-  // },
 ];
 
 const accountLinks = [
@@ -50,11 +45,13 @@ const Header = () => {
     <header>
       <div className={styles.container}>
         <div className={styles.logoWrapper}>
-          <img
-            className={styles.logo}
-            src="/assets/images/kulogo.png"
-            alt="logo"
-          />
+          <Link href="/">
+            <img
+              className={styles.logo}
+              src="/assets/images/kulogo.png"
+              alt="logo"
+            />
+          </Link>
           <div>
             Kham <br />
             Udom

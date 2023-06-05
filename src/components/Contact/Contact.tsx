@@ -48,7 +48,7 @@ const Contact = ({ className }: ContactProps) => {
     <>
       <section className={className} id="contact">
         <div className={styles.container}>
-          <SectionHeader title="contact" />
+          <SectionHeader title="Contact" />
           <form ref={formRef} onSubmit={sendEmail} className={styles.form}>
             <div className={styles.columnLeft}>
               <div className={styles.inputWrapper}>

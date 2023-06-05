@@ -6,13 +6,14 @@
   position: relative;
 
   .title {
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     font-size: clamp(1.625rem, 5vw, 2rem);
+    margin: 0 1em;
   }
 
   .divider {
     opacity: 1;
     width: 100%;
-    margin-inline-start: 1em;
   }
 }

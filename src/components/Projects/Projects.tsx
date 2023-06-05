@@ -13,7 +13,7 @@ const Projects = ({ className }: ProjectsProps) => {
     <>
       <section className={className} id="projects">
         <div className={styles.container}>
-          <SectionHeader title="project" />
+          <SectionHeader title="Projects" />
           <div className={styles.content}>
             <ul>
               {ProjectsData.map((item) => (
