@@ -72,6 +72,12 @@
     margin-top: 60px;
     .form {
       flex-direction: column;
+      .input {
+        width: unset;
+      }
+      .messageWrapper {
+        margin-top: 20px;
+      }
     }
   }
 }

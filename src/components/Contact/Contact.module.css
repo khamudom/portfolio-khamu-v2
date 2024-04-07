@@ -64,4 +64,10 @@
   .container .form {
     flex-direction: column;
   }
+  .container .form .input {
+    width: unset;
+  }
+  .container .form .messageWrapper {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=Contact.module.css.map */

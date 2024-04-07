@@ -1,17 +1,17 @@
-import React from 'react';
-import styles from './Contact.module.scss';
-import SectionHeader from '../common/SectionHeader/SectionHeader';
-import emailjs from '@emailjs/browser';
-import Button from '../Button/Button';
-import Toast from '../Toast/Toast';
-import { FiSend } from 'react-icons/fi';
+import React from "react";
+import styles from "./Contact.module.scss";
+import SectionHeader from "../common/SectionHeader/SectionHeader";
+import emailjs from "@emailjs/browser";
+import Button from "../Button/Button";
+import Toast from "../Toast/Toast";
+import { FiSend } from "react-icons/fi";
 
 type ContactProps = {
   className?: string;
 };
 
 const Contact = ({ className }: ContactProps) => {
-  const [showToast, setShowToast] = React.useState('');
+  const [showToast, setShowToast] = React.useState("");
   const formRef = React.useRef<HTMLFormElement | any>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -19,14 +19,14 @@ const Contact = ({ className }: ContactProps) => {
 
     emailjs
       .sendForm(
-        'service_1f6c35r',
-        'template_0le7g7c',
+        "service_1f6c35r",
+        "template_0le7g7c",
         formRef.current,
-        'RuRZhD10TyG-ofQJ1'
+        "RuRZhD10TyG-ofQJ1"
       )
       .then(
         (result) => {
-          setShowToast('SUCCESS');
+          setShowToast("SUCCESS");
         },
         (error) => {
           console.log(error.text);
@@ -37,9 +37,9 @@ const Contact = ({ className }: ContactProps) => {
   };
 
   React.useEffect(() => {
-    if (showToast === 'SUCCESS') {
+    if (showToast === "SUCCESS") {
       setTimeout(() => {
-        setShowToast('');
+        setShowToast("");
       }, 3000);
     }
   }, [showToast]);
@@ -81,7 +81,7 @@ const Contact = ({ className }: ContactProps) => {
                 />
               </div>
             </div>
-            <div>
+            <div className={styles.messageWrapper}>
               <div className={styles.inputWrapper}>
                 <label>Message</label>
                 <textarea
