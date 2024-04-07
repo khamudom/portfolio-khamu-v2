@@ -36,4 +36,17 @@
   display: flex;
   -moz-column-gap: 6px;
        column-gap: 6px;
+}
+
+@media (max-width: 430px) {
+  .container .wrapper {
+    flex-direction: column;
+    align-items: center;
+    justify-content: unset;
+    gap: 20px;
+  }
+  .container .technology span {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=PageLayoutHeader.module.css.map */

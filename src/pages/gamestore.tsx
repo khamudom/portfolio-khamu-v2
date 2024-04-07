@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import { PageLayout } from '@/components';
-import { gameStorePageData } from '@/models/PageData';
-import styles from '@/styles/Page.module.scss';
-import Link from 'next/link';
+import React from "react";
+import { PageLayout } from "@/components";
+import { gameStorePageData } from "@/models/PageData";
+import styles from "@/styles/Page.module.scss";
+import Link from "next/link";
 
 const gamestore = () => {
   return (
@@ -13,6 +13,7 @@ const gamestore = () => {
           <div className={styles.row}>
             <div className={`${styles.imageColumnWrapper} ${styles.details}`}>
               <img
+                className={styles.fullImage}
                 src="/assets/images/gamesite/game-desktop.png"
                 alt="coupon"
                 width={483.45}
@@ -41,7 +42,7 @@ const gamestore = () => {
           </div>
           <div className={styles.bottomElement}>
             <p>
-              The comp can be found{' '}
+              The comp can be found{" "}
               <Link
                 className={styles.link}
                 href="https://www.pinterest.com/pin/767582330225996826/"

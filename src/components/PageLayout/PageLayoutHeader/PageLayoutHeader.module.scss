@@ -42,3 +42,33 @@
     }
   }
 }
+
+@media (max-width: 430px) {
+  .container {
+    .title {
+    }
+
+    .wrapper {
+      flex-direction: column;
+      align-items: center;
+      justify-content: unset;
+      gap: 20px;
+
+      .btnWrapper {
+      }
+    }
+
+    .description {
+    }
+
+    .technology {
+      h3 {
+      }
+
+      span {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}

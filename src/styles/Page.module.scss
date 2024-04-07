@@ -18,8 +18,8 @@
 
     .video {
       iframe {
-        height: 500px;
         width: 889px;
+        height: 500px;
       }
     }
   }
@@ -100,6 +100,88 @@
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+@media (max-width: 430px) {
+  .section {
+    padding: 20px 0;
+    .column {
+      .inlineText {
+      }
+
+      .video {
+        iframe {
+          width: 390px;
+          height: inherit;
+        }
+      }
+    }
+
+    .row {
+      display: flex;
+      column-gap: 4%;
+      max-width: 1024px;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      .description {
+        text-align: unset;
+        align-items: center;
+
+        p {
+          max-width: 390px;
+        }
+      }
+    }
+
+    .row,
+    .column {
+      .details {
+        .image {
+          width: 390px;
+          height: inherit;
+        }
+      }
+
+      .heading {
+      }
+
+      .xheading {
+      }
+    }
+
+    .imageColumnWrapper {
+      .fullImage {
+        width: 390px;
+        height: inherit;
+      }
+      .caption {
+      }
+    }
+
+    .imageRowWrapper {
+    }
+
+    .imageColumnWrapper,
+    .imageRowWrapper {
+      .image {
+        width: 390px;
+        height: inherit;
+      }
+    }
+
+    img {
+    }
+
+    .bottomElement {
+    }
+
+    .link {
+      &:hover {
+      }
     }
   }
 }

@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import { PageLayout } from '@/components';
-import React from 'react';
-import { fastPageData } from '../models/PageData';
-import styles from '../styles/Page.module.scss';
-import Image from 'next/image';
+import { PageLayout } from "@/components";
+import React from "react";
+import { fastPageData } from "../models/PageData";
+import styles from "../styles/Page.module.scss";
+import Image from "next/image";
 
 const fast = () => {
   return (
@@ -12,6 +12,7 @@ const fast = () => {
         <div className={styles.row}>
           <div className={styles.imageColumnWrapper}>
             <img
+              className={styles.fullImage}
               src="/assets/images/fast/fast-site.png"
               alt="fast portfolio"
               width={600}

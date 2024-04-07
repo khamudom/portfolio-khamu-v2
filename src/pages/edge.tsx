@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import React from 'react';
-import { PageLayout } from '@/components';
-import { edgePageData } from '../models/PageData';
-import styles from '../styles/Page.module.scss';
-import Image from 'next/image';
+import React from "react";
+import { PageLayout } from "@/components";
+import { edgePageData } from "../models/PageData";
+import styles from "../styles/Page.module.scss";
+import Image from "next/image";
 
 const edge = () => {
   return (
@@ -13,6 +13,7 @@ const edge = () => {
           <div className={styles.row}>
             <div className={styles.imageColumnWrapper}>
               <img
+                className={styles.fullImage}
                 src="/assets/images/edge/shop-coupon.png"
                 alt="coupon"
                 height={450}
@@ -52,6 +53,7 @@ const edge = () => {
             </div>
             <div className={styles.imageColumnWrapper}>
               <img
+                className={styles.fullImage}
                 src="/assets/images/edge/feed.png"
                 alt="feed"
                 width={598.04}
@@ -67,6 +69,7 @@ const edge = () => {
         <div className={styles.row}>
           <div className={styles.imageColumnWrapper}>
             <img
+              className={styles.fullImage}
               src="/assets/images/edge/verticaltab.gif"
               alt="vertical tab"
               width={550}
@@ -124,6 +127,7 @@ const edge = () => {
           </div>
           <div className={styles.imageColumnWrapper}>
             <img
+              className={styles.fullImage}
               src="/assets/images/edge/devtool-hc.png"
               alt="devtool"
               width={550}
