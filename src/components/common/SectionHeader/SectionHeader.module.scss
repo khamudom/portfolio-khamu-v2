@@ -6,7 +6,7 @@
   position: relative;
 
   .title {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-weight: 600;
     font-size: clamp(1.625rem, 5vw, 2rem);
     margin: 0 1em;
@@ -15,5 +15,16 @@
   .divider {
     opacity: 1;
     width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .sectionHeader {
+    margin-bottom: 1em;
+    justify-content: center;
+  }
+
+  .divider {
+    display: none;
   }
 }

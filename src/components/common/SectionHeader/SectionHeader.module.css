@@ -6,16 +6,22 @@
   position: relative;
 }
 .sectionHeader .title {
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
   font-size: clamp(1.625rem, 5vw, 2rem);
-  background: linear-gradient(90deg, var(--accent-fill-two), var(--accent-fill-three));
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin: 0 1em;
 }
 .sectionHeader .divider {
   opacity: 1;
   width: 100%;
-  -webkit-margin-start: 1em;
-          margin-inline-start: 1em;
+}
+
+@media (max-width: 430px) {
+  .sectionHeader {
+    margin-bottom: 1em;
+    justify-content: center;
+  }
+  .divider {
+    display: none;
+  }
 }/*# sourceMappingURL=SectionHeader.module.css.map */

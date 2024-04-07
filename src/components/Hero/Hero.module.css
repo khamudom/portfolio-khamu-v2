@@ -1,4 +1,5 @@
 .container .title {
+  font-family: "Josefin Sans", sans-serif;
   font-size: 4em;
   line-height: 1;
   font-weight: 700;
@@ -19,4 +20,18 @@
   -moz-column-gap: 12px;
        column-gap: 12px;
   margin-top: 20px;
+}
+
+@media (max-width: 430px) {
+  .container .title {
+    font-size: 2em;
+    max-width: unset;
+  }
+  .container .description {
+    font-size: 1em;
+    max-width: unset;
+  }
+  .container .btnContainer {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=Hero.module.css.map */

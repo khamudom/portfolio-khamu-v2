@@ -55,4 +55,13 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+}
+
+@media screen and (max-width: 430px) {
+  .container {
+    margin-top: 60px;
+  }
+  .container .form {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=Contact.module.css.map */

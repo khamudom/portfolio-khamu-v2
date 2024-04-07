@@ -20,3 +20,21 @@
   width: 100%;
   padding-bottom: 200px;
 }
+
+@media (max-width: 430px) {
+  .main {
+    max-width: unset;
+    padding: 0 20px;
+    margin-top: 40px;
+  }
+
+  .hero {
+    height: unset;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+
+  .section {
+    padding-bottom: 20px;
+  }
+}

@@ -1,41 +1,38 @@
 /* eslint-disable @next/next/no-img-element */
-import Link from 'next/link';
-import React from 'react';
-import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
-import { AiOutlineGithub, AiOutlineLinkedin } from 'react-icons/ai';
-import { FiMail } from 'react-icons/fi';
-import { RxHamburgerMenu } from 'react-icons/rx';
-import styles from './Header.module.scss';
+import Link from "next/link";
+import React from "react";
+import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+import styles from "./Header.module.scss";
 
 const navigationItems = [
   {
     id: 0,
-    title: 'Intro',
-    href: '/',
+    title: "Intro",
+    href: "/",
   },
   {
     id: 1,
-    title: 'Projects',
-    href: '/#projects',
+    title: "Projects",
+    href: "/#projects",
   },
   {
     id: 2,
-    title: 'Contact',
-    href: '/#contact',
+    title: "Contact",
+    href: "/#contact",
   },
 ];
 
 const accountLinks = [
   {
     id: 0,
-    title: 'Github',
-    href: 'https://github.com/khamudom',
+    title: "Github",
+    href: "https://github.com/khamudom",
     icon: <AiOutlineGithub />,
   },
   {
     id: 1,
-    title: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/khamudom/',
+    title: "LinkedIn",
+    href: "https://www.linkedin.com/in/khamudom/",
     icon: <AiOutlineLinkedin />,
   },
 ];
@@ -52,10 +49,7 @@ const Header = () => {
               alt="logo"
             />
           </Link>
-          <div>
-            Kham <br />
-            Udom
-          </div>
+          <div className={styles.name}>Kham Udom</div>
         </div>
         <div className={styles.navLinks}>
           <ul>

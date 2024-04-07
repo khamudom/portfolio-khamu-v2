@@ -114,6 +114,15 @@
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 }
 
+@media (max-width: 430px) {
+  .card {
+    width: 100%;
+    height: inherit;
+  }
+  .card .content .skills {
+    display: NONE;
+  }
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;

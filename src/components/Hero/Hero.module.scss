@@ -1,6 +1,6 @@
 .container {
   .title {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: "Josefin Sans", sans-serif;
     font-size: 4em;
     line-height: 1;
     font-weight: 700;
@@ -25,5 +25,21 @@
     display: flex;
     column-gap: 12px;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 430px) {
+  .container {
+    .title {
+      font-size: 2em;
+      max-width: unset;
+    }
+    .description {
+      font-size: 1em;
+      max-width: unset;
+    }
+    .btnContainer {
+      justify-content: center;
+    }
   }
 }
