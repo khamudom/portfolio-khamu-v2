@@ -147,4 +147,26 @@ export const ProjectsData = [
       },
     ],
   },
+  {
+    id: 6,
+    title: "Property Pulse",
+    href: "https://property-pulse-plum.vercel.app/",
+    imgSrc: "/assets/images/projects/ppulse.jpg",
+    imgAlt: "Property Pulse website image",
+    projectType: "Web Development UI",
+    skills: [
+      {
+        iconSrc: "/assets/images/skills/icon-html5.png",
+        iconAlt: "html",
+      },
+      {
+        iconSrc: "/assets/images/skills/icon-css.png",
+        iconAlt: "css",
+      },
+      {
+        iconSrc: "/assets/images/skills/icon-ts.png",
+        iconAlt: "typescript",
+      },
+    ],
+  },
 ];
